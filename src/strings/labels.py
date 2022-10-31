@@ -3,5 +3,5 @@ labels = {
     "MirrorMenu_bl_label":"Object mirroring",
     
     
-    "MirrorMenu_suffix_label":"Suffix:"
+    "MirrorMenu_suffix_label":"Suffix"
 }

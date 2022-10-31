@@ -1,7 +1,8 @@
 ### General libraries ###
-from .main_gui.flip_button import MirrorButton
+from .main_gui.mirror_button import MirrorButton
 from .main_gui.mirror_menu import MirrorMenu
 from .strings.keymaps import keymaps
+from .strings.descriptions import descriptions
 
 ### Blender libraries ###
 import bpy
@@ -64,7 +65,7 @@ def register_props():
     bpy.types.Scene.mirroring_suffix = bpy.props.StringProperty(
             name = "Mirroring suffix",
             default = "",
-            description = "Suffix for newly mirrored model(s)",
+            description = descriptions["MirrorMenu_suffix_description"],
     )
 
     _props.append(bpy.types.Scene.mirror_x)

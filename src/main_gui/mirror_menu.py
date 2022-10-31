@@ -1,5 +1,5 @@
 ### General modules ###
-from .flip_button import MirrorButton
+from .mirror_button import MirrorButton
 from ..strings.ids import ids
 from ..strings.labels import labels
 
@@ -29,7 +29,7 @@ class MirrorMenu(bpy.types.Panel):
         layout.separator()
 
         row = box.row()
-        row.prop(context.scene, "mirroring_suffix", text="Suffix")
+        row.prop(context.scene, "mirroring_suffix", text=labels["MirrorMenu_suffix_label"])
 
         row = box.row()
         row.operator(MirrorButton.bl_idname, text=MirrorButton.bl_label)
