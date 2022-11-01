@@ -27,7 +27,7 @@ class MirrorMenu(bpy.types.Panel):
         row.prop(context.scene, "mirror_z", text="Mirror Z-axis")
         
         row = box.row()
-        row.prop(context.scene, "global_mirror", text="Mirror Across Global Axes + Origin")
+        row.prop(context.scene, "global_mirror", text=labels["MirrorMenu_global_mirror_label"])
 
         layout.separator()
 
