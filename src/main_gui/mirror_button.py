@@ -26,7 +26,12 @@ class MirrorButton(Operator):
         
         selected = bpy.context.selected_objects
         
+        
+        
         for obj in selected:
+            if(bpy.context.scene.global_mirror == True):
+                bpy.ops.object.transform_apply(location=True, rotation=True, scale=True) #The object origin point is moved to the global origin, the rotation is cleared and scale values are set to 1
+                     
             mirror_x = -1.0 * obj.scale[0] if bpy.context.scene.mirror_x == True else obj.scale[0]
             mirror_y = -1.0 * obj.scale[1] if bpy.context.scene.mirror_y == True else obj.scale[1]
             mirror_z = -1.0 * obj.scale[2] if bpy.context.scene.mirror_z == True else obj.scale[2]
