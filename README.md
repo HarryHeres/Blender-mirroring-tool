@@ -4,7 +4,7 @@ A Blender add-on with enhanced control over model mirroring.
 It is supported by Blender versions **2.8X.X - 2.9X.X** (fully tested on these, most probably will work on newer as well) 
 
 # Installation
-To install this add-on, download the intended released version ([TBA](https://github.com/HarryHeres/Blender-mirroring-tool)) and proceed as follows: [How to install](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html).
+To install this add-on, download the intended released version [HERE](https://github.com/HarryHeres/Blender-mirroring-tool/releases) and proceed as follows: [How to install](https://docs.blender.org/manual/en/latest/editors/preferences/addons.html).
 After a successfull installation, the add-on should be active under the **F5** hotkey.
 
 # Add-on's quick overview
