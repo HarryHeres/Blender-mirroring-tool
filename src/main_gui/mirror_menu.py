@@ -7,6 +7,10 @@ from ..strings.labels import labels
 import bpy
 
 class MirrorMenu(bpy.types.Panel):
+    '''
+    Class representing the add-on's panel upon pressing F5 (in default configuration)
+    '''
+    
     bl_idname = ids["MirrorMenu_bl_idname"]
     bl_label = labels["MirrorMenu_bl_label"]
     bl_space_type = 'VIEW_3D'

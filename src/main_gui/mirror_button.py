@@ -10,6 +10,10 @@ import bpy
 from bpy.types import Operator
 
 class MirrorButton(Operator):
+    '''
+    Class representing button for starting the mirroring process.
+    '''
+
     bl_idname =  ids["MirrorButton_bl_idname"]
     bl_description = descriptions["MirrorButton_bl_description"]
     bl_label = labels["MirrorButton_bl_label"]
@@ -19,7 +23,6 @@ class MirrorButton(Operator):
         return True
     
     def mirror(self):
-        
         if(len(bpy.context.selected_objects) == 0):
             SimplePopup.showPopup(self, errors["Message_no_objects_selected"], "INFO", "INFO")
             return

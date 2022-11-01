@@ -16,5 +16,5 @@ keymaps = {"Mirroring": [{
                 "value": "PRESS"
             }]}
 '''
-Add-on specific keymaps
+Dictionary of add-on specific keymaps
 '''
