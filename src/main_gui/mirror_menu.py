@@ -18,13 +18,13 @@ class MirrorMenu(bpy.types.Panel):
         box = layout.box()
 
         row = box.row()
-        row.prop(context.scene, "mirror_x", text="Mirror X-axis")
+        row.prop(context.scene, "mirror_x", text=labels["MirrorMenu_x_label"])
 
         row = box.row()
-        row.prop(context.scene, "mirror_y", text="Mirror Y-axis")
+        row.prop(context.scene, "mirror_y", text=labels["MirrorMenu_y_label"])
 
         row = box.row()
-        row.prop(context.scene, "mirror_z", text="Mirror Z-axis")
+        row.prop(context.scene, "mirror_z", text=labels["MirrorMenu_z_label"])
         
         row = box.row()
         row.prop(context.scene, "global_mirror", text=labels["MirrorMenu_global_mirror_label"])
