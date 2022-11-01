@@ -61,16 +61,23 @@ def register_props():
         name = "Mirroring Z-Axis",
         default=False
     )
-
+    
     bpy.types.Scene.mirroring_suffix = bpy.props.StringProperty(
             name = "Mirroring suffix",
             default = "",
             description = descriptions["MirrorMenu_suffix_description"],
     )
 
+    bpy.types.Scene.global_mirror = bpy.props.BoolProperty(
+            name = "Global Mirror",
+            default = True
+    )
+
+
     _props.append(bpy.types.Scene.mirror_x)
     _props.append(bpy.types.Scene.mirror_y)
     _props.append(bpy.types.Scene.mirror_z)
+    _props.append(bpy.types.Scene.global_mirror)
 
 def register_keymaps():
     global _keymaps_list
