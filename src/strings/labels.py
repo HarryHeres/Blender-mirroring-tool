@@ -9,3 +9,6 @@ labels = {
     "MirrorMenu_global_mirror_label":"Mirror Across Global Axes + Origin",
     "MirrorMenu_suffix_label":"Suffix"
 }
+'''
+Dictionary of all label texts of all used GUI elements
+'''
