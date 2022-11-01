@@ -5,7 +5,7 @@ import bpy
     
 class SimplePopup():
     '''
-    Create a simple popup to notify the user
+    Class representing a simple popup to notify the user
     '''
     def showPopup(self, message = "Message", title = "Info", icon = 'INFO'):
         def draw(self, context):
