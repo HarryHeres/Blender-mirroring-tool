@@ -62,16 +62,15 @@ def register_props():
         default=False
     )
     
-    bpy.types.Scene.global_mirror = bpy.props.BoolProperty(
-            name = "Global Mirror",
-            default = True
-    )
-
-
     bpy.types.Scene.mirroring_suffix = bpy.props.StringProperty(
             name = "Mirroring suffix",
             default = "",
             description = descriptions["MirrorMenu_suffix_description"],
+    )
+
+    bpy.types.Scene.global_mirror = bpy.props.BoolProperty(
+            name = "Global Mirror",
+            default = True
     )
 
 
