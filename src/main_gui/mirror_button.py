@@ -45,6 +45,7 @@ class MirrorButton(Operator):
             bpy.context.active_object.scale = (mirror_x, mirror_y, mirror_z)
             if(bpy.context.scene.mirroring_suffix != ""):
                 bpy.context.active_object.name = mirrored.name # Remove the Blender numbering (.00X)
+            bpy.ops.object.transform_apply(location=False, rotation=False, scale=True) # Set scale of mirrored object to 1,1,1, which helps prevent issues with future operations such as sculpting
 
         # Deselect all newly created and select back the original ones
         bpy.ops.object.select_all(action="DESELECT") 
